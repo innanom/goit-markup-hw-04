@@ -9,6 +9,8 @@
     --color-shadow-hero-button: rgba(0, 0, 0, 0.15);
     --color-bg-btn-filters: #F5F4FA;
     --border-color: #EEEEEE;
+    --main-icons-color: #AFB1B8;
+
 
     /* Fonts */
     --main-font: Roboto;
@@ -184,7 +186,6 @@ button {
 
     color: var(--primary-heading-color);
 
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -207,7 +208,7 @@ button {
     background-size: 70px;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #F5F4FA;
+    background-color: var(--color-bg-btn-filters);
 }
 .icon-antenna::before {
     background-image: url(../images/antenna.svg)
@@ -259,6 +260,9 @@ button {
 }
 /* Our-team */
 /* Наша команда */
+.section-our-team {
+    background-color: #F5F4FA;
+}
 .our-team {
     display: flex;
 
@@ -270,8 +274,6 @@ button {
 }
 .team-cards:not(:last-child) {
     margin-right: 30px;
-   
-    
 }
 .team {
     margin-top: 0;
@@ -320,7 +322,7 @@ button {
     background: var(--accent-color);
 }
 .socials-icon {
-    fill: #AFB1B8;
+    fill: var(--main-icons-color);
 }
 .socials-link:hover .socials-icon,
 .socials-link:focus .socials-icon {
@@ -330,6 +332,47 @@ button {
 .socials-link:focus {
     fill: var(--accent-color);
 }
+/* Regular clients */
+/* Постійні клієнти */
+.regular-clients-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--primary-heading-color);
+}
+
+.regular-clients {
+    display: flex;
+    gap: 30px;
+}
+.client-company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--main-icons-color);
+    border-radius: 4px;
+}
+.client-company:hover, 
+.client-company:focus {
+    border-color: var(--accent-color);
+}
+
+.logo-icon {
+fill: var(--main-icons-color);
+}
+.client-company:hover .logo-icon,
+.client-company:focus .logo-icon{
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+} 
+
 /* Footer*/
 .address {
     font-style: normal;

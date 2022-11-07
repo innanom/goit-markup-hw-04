@@ -130,7 +130,7 @@ button {
     fill: currentColor;
 }
 .contacts-iteam:hover,
-.contacts-item:focus {
+.contacts-iteam:focus {
     color: var(--accent-color);
 }
 
@@ -221,18 +221,25 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--color-bg-btn-filters);
+    
+    margin-bottom: 30px;
+    border-radius: 4px;
 }
 .icon-antenna::before {
-    background-image: url(../images/antenna.svg)
+    background-image: url(../images/antenna.svg);
+    
 }
 .icon-clock::before {
     background-image: url(../images/clock.svg);
+    
 }
 .icon-diagram::before {
     background-image: url(../images/diagram.svg);
+   
 }
 .icon-astronaut::before {
     background-image: url(../images/astronaut.svg);
+    
 }
  .feature-list .sub-list:not(:last-child) {
      margin-right: 30px;
@@ -288,7 +295,7 @@ button {
 
 .team {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 16px;
 
     color: var(--primary-text-color);
 
@@ -508,7 +515,9 @@ fill: var(--main-icons-color);
 .button-filter:focus {
     background: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(--primary-color);
 }
+
 .group {
     display: flex;
     flex-wrap: wrap;
